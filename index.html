@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111110">
+  <title>LUMERA — Modern Furniture</title>
+  <style>
+    :root { color-scheme: dark; --gold:#d7c39a; --muted:#9d978b; --bg:#111110; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100svh; display:grid; place-items:center; overflow-x:hidden; padding:48px 22px; color:#f4f0e8; background:radial-gradient(ellipse at 50% 34%, #292722 0%, #191917 38%, var(--bg) 76%); font-family: "Segoe UI", Tahoma, Arial, sans-serif; }
+    main { width:min(100%, 440px); text-align:center; }
+    .brand { direction:ltr; margin-bottom:58px; opacity:0; animation:rise 950ms cubic-bezier(.2,.7,.2,1) 120ms forwards; }
+    .brand-name { margin:0; color:#eee8da; font-family:Georgia,"Times New Roman",serif; font-size:clamp(3.6rem, 16vw, 5.7rem); font-style:italic; font-weight:600; letter-spacing:-.07em; line-height:1; text-shadow:0 0 38px #d7c39a20; }
+    .brand-tag { margin:18px 0 0; color:var(--gold); font-size:.71rem; letter-spacing:.42em; font-weight:500; }
+    h2 { margin:0 0 24px; color:#e8e3d8; font-size:1.05rem; font-weight:400; letter-spacing:.02em; opacity:0; animation:rise 800ms ease 700ms forwards; }
+    .links { display:grid; gap:13px; }
+    .social { position:relative; isolation:isolate; display:flex; align-items:center; gap:17px; min-height:66px; padding:0 20px; overflow:hidden; color:#eeeae2; text-decoration:none; text-align:right; border:1px solid #c9b98c42; border-radius:13px; background:linear-gradient(110deg,#ffffff0a,#ffffff02 48%,#d8c49a08); box-shadow:0 9px 28px #00000020,inset 0 1px #ffffff0a; transition:transform 240ms ease,border-color 240ms ease,box-shadow 240ms ease,background 240ms ease; opacity:0; animation:rise 720ms cubic-bezier(.2,.7,.2,1) forwards; }
+    .social:nth-child(1){animation-delay:950ms}.social:nth-child(2){animation-delay:1080ms}.social:nth-child(3){animation-delay:1210ms}.social:nth-child(4){animation-delay:1340ms}
+    .social::before { content:""; position:absolute; z-index:-1; inset:0; transform:translateX(-115%); background:linear-gradient(105deg,transparent 28%,#e7d5ac16 50%,transparent 72%); transition:transform 650ms ease; }
+    .social:hover { transform:translateY(-3px); border-color:#d7c39a9c; background-color:#d7c39a08; box-shadow:0 14px 34px #0005,0 0 22px #d7c39a0d; }
+    .social:hover::before { transform:translateX(115%); }
+    .social:active { transform:translateY(-1px) scale(.99); }
+    .social:focus-visible { outline:2px solid var(--gold); outline-offset:4px; }
+    .icon { width:25px; height:25px; flex:none; color:var(--gold); }
+    .label { flex:1; font-size:.96rem; font-weight:500; letter-spacing:.02em; }
+    .arrow { color:#93876e; font-size:1.05rem; transition:transform 220ms ease,color 220ms ease; }
+    .social:hover .arrow { transform:translateX(-3px); color:var(--gold); }
+    @keyframes rise { from { opacity:0; transform:translateY(15px) scale(.99); } to { opacity:1; transform:translateY(0) scale(1); } }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; transition-duration:.01ms !important; } .brand,h2,.social { opacity:1; transform:none; } }
+  </style>
+</head>
+<body>
+  <main aria-label="LUMERA">
+    <header class="brand">
+      <h1 class="brand-name">𝑳𝒖𝒎𝒆𝒓𝒂</h1>
+      <p class="brand-tag">MODERN FURNITURE</p>
+    </header>
+    <h2>تجدنا في كل مكان</h2>
+    <nav class="links" aria-label="روابط التواصل الاجتماعي">
+      <a class="social" href="https://www.facebook.com/share/1EEdSWnAvZ/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8.2h2.76l.41-3.2H13.5V7.56c0-.93.26-1.56 1.59-1.56h1.7V3.14C16.5 3.05 15.52 3 14.37 3c-2.4 0-4.04 1.47-4.04 4.17V9.6H7.62v3.2h2.71V21h3.17z"/></svg>
+        <span class="label">Facebook</span><span class="arrow" aria-hidden="true">←</span>
+      </a>
+      <a class="social" href="https://www.instagram.com/lumera_33?mdxt=ZjJxMjB0cTFwOGVi" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.4" y="3.4" width="17.2" height="17.2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+        <span class="label">Instagram</span><span class="arrow" aria-hidden="true">←</span>
+      </a>
+      <a class="social" href="https://www.tiktok.com/@lumera330?_r=1&_t=ZS-9B3T54AK4Jg" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.2a6.3 6.3 0 0 1-3.8-1.3V14a5.4 5.4 0 1 1-4.7-5.35v3.05a2.4 2.4 0 1 0 1.7 2.3V3h3.05c.2 1.8 1.4 3.2 3.75 3.55v.65Z"/></svg>
+        <span class="label">TikTok</span><span class="arrow" aria-hidden="true">←</span>
+      </a>
+      <a class="social" href="https://wa.me/201036002825" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3.5 20l1.1-4.4a8.2 8.2 0 1 1 15.6-3.9Z"/><path d="M8.4 8.1c.4-.8.8-.7 1.1-.7h.4c.2 0 .4.1.5.4l.7 1.7c.1.3 0 .5-.1.7l-.6.7c-.2.2-.2.4 0 .7.4.7 1.1 1.4 1.8 1.8.3.2.5.2.7-.1l.7-.8c.2-.2.4-.2.7-.1l1.7.8c.3.1.4.3.4.5 0 .3-.2 1-.7 1.4-.5.5-1.3.7-2 .6-1.1-.2-2.5-.8-3.9-2-1.1-1-2.1-2.4-2.3-3.4-.2-.9.2-1.7.9-2.2Z"/></svg>
+        <span class="label">WhatsApp</span><span class="arrow" aria-hidden="true">←</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>
